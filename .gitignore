@@ -10,6 +10,7 @@ b-cov
 pids
 logs
 results
+css
 
 npm-debug.log
 node_modules
