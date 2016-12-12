@@ -575,16 +575,24 @@ a:focus {
   margin: .5em 0;
 }
 
+.share {
+  padding-top: 1em;
+}
+
+.disqus_thread {
+  padding-top: 2em;
+}
+
 @media screen and (max-width: 879px) {
   .site-logo {
-    display:none
+    display:none;
   }
 }
 
 @media screen and (min-width: 880px) {
   .site-header {
     width:20%;
-    float: left
+    float: left;
   }
 
   .site-title {
@@ -593,7 +601,7 @@ a:focus {
 
   .site-content {
     width: 80%;
-    float: left
+    float: left;
   }
 
   .content-area {
