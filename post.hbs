@@ -22,7 +22,7 @@
 
         <footer class="post-footer">
 
-            <section class="share">
+            <section class="share-container">
                 <a class="icon-link" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="symbol twitter-icon">circletwitterbird</span>
@@ -47,7 +47,7 @@
             </section>
             {{/if}}
 
-            <section id="disqus_thread"></section>
+            <section id="disqus_thread" class="disqus-container"></section>
             <script>
               var disqus_config = function () {
                 this.page.url = '{{url absolute="true"}}';

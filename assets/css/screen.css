@@ -575,11 +575,11 @@ a:focus {
   margin: .5em 0;
 }
 
-.share {
+.share-container {
   padding-top: 1em;
 }
 
-.disqus_thread {
+.disqus-container {
   padding-top: 2em;
 }
 
