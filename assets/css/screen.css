@@ -1,3 +1,4 @@
+html {}
 /* Goolge Fonts */
 
 /* latin-ext */
@@ -137,6 +138,10 @@ h1 {
 
 
 /* Structural */
+.site-footer {
+  padding-top: 4em;
+}
+
 @media screen and (max-width: 879px) {
   .site-logo {
     display:none;
@@ -173,7 +178,7 @@ h1 {
   .site-footer {
     clear: both;
     margin-left: 20%;
-    padding: 4em 0 0 3em;
+    padding-left: 3em;
   }
 }
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{!-- Document Settings --}}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  {{!-- Page Meta --}}
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  {{!-- Mobile Meta --}}
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {{!-- Brand icon --}}
+  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+  {{!-- Styles --}}
+  <link rel="stylesheet" type="text/css" href="../../assets/css/screen.css" inline>
+
+  {{!-- Ghost outputs important style and meta data with this tag --}}
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div>
+        <div class="site-logo">
+          {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img class="logo" src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        </div>
+        <div class="site-title-wrapper">
+          <div class="site-title">
+            <a href="{{@blog.url}}" rel="home">{{@blog.title}}</a>
+          </div>
+          <p class="site-description">{{@blog.description}}</p>
+				</div>
+		  </div>
+      {{!-- The blog navigation links --}}
+      <nav role="navigation">
+        {{navigation}}
+      </nav>
+    </header>
+
+    <div class="site-content">
+      {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+      {{{body}}}
+    </div>
+    {{!-- The tiny footer at the very bottom --}}
+    <footer class="site-footer clearfix">
+      <section class="site-info">&copy; {{date format="YYYY"}} {{@blog.title}}</section>
+    </footer>
+
+  </div>
+
+  {{!-- Ghost outputs important scripts and data with this tag --}}
+  {{ghost_foot}}
+
+</body>
+</html>
