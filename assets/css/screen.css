@@ -5,7 +5,10 @@ html {
   font-family: 'Open Sans', sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  box-sizing: border-box
+  box-sizing: border-box;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 body {
@@ -37,7 +40,10 @@ p {
 
 a {
   background-color: transparent;
-  color: #343434
+  color: #343434;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 a:active,a:focus,a:hover {
@@ -147,6 +153,8 @@ h1 {
   padding: .5em 0;
   display: block;
   text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /* Content Styles */
