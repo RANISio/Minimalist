@@ -2,10 +2,10 @@
     {{#foreach navigation}}
         <li class="menu-item" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
     {{/foreach}}
-    <li class="menu-item" role="presentation"><a href="https://twitter.com/RANISdev" target="_blank">FOLLOW</a></li>
+    <li class="menu-item" role="presentation"><a href="https://twitter.com/RANISdev" target="_blank">Follow</a></li>
     {{#if @labs.subscribers}}
-        <li class="menu-item" role="presentation"><a href="{{@blog.url}}/subscribe/">SUBSCRIBE</a></li>
+        <li class="menu-item" role="presentation"><a href="{{@blog.url}}/subscribe/">Subscribe</a></li>
     {{else}}
-        <li class="menu-item" role="presentation"><a href="{{@blog.url}}/rss/">SUBSCRIBE</a></li>
+        <li class="menu-item" role="presentation"><a href="{{@blog.url}}/rss/">Subscribe</a></li>
     {{/if}}
 </ul>
