@@ -59,10 +59,39 @@ h1 {
   margin: .5em 0
 }
 
+code, pre, tt {
+  background-color: #f5f7f8;
+}
+
+pre {
+  font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid #d8e0e4;
+  border-radius: 3px;
+  white-space: pre;
+  font-size: .9em;
+}
+
+code, tt {
+  padding: .2rem .3rem .1rem;
+  border: 1px solid #d8e0e4;
+  border-radius: 2px;
+  color: #c25;
+  vertical-align: middle;
+  white-space: pre-wrap;
+  font-size: .8em;
+  line-height: 1em;
+}
+
 
 /* Structural */
 .site-footer {
   padding-top: 4em;
+}
+
+.post-content img {
+  max-width: 100%;
 }
 
 @media screen and (max-width: 879px) {
