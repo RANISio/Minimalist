@@ -116,17 +116,22 @@ pre code, pre tt {
 
 @media screen and (min-width: 880px) {
   .site-header {
-    width:20%;
+    width:200px;
     float: left;
   }
 
   .site-title {
-    padding-top: .8em
+    padding-top: .8em;
+    text-align: center;
+  }
+
+  .site-description {
+    text-align: center;
   }
 
   .site-wrapper {
     max-width: 1240px;
-    margin: auto
+    margin: auto;
   }
 
   .site-content {
@@ -146,10 +151,6 @@ pre code, pre tt {
 }
 
 /* Site Branding */
-.site-logo {
-  text-align: center;
-}
-
 .logo {
   border-radius: 100%;
   max-width: 200px;
